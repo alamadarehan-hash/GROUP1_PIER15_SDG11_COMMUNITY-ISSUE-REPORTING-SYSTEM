@@ -1,0 +1,2 @@
+﻿DELETE FROM Reports;
+DBCC CHECKIDENT ('Reports', RESEED, 0);
