@@ -1,0 +1,17 @@
+﻿CREATE TABLE Users (
+    UserID INT IDENTITY(1,1) PRIMARY KEY,
+    Username VARCHAR(50) NOT NULL UNIQUE,
+    Password VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Reports (
+    ReportID INT IDENTITY(1,1) PRIMARY KEY,
+    Issue VARCHAR(100) NOT NULL,
+    Category VARCHAR(100) NOT NULL,
+    Location VARCHAR(255) NOT NULL,
+    Status VARCHAR(50) DEFAULT 'Pending',
+    Priority VARCHAR(50) DEFAULT 'Medium',
+    ReportDate DATETIME DEFAULT GETDATE(),
+    Description TEXT,
+    UserID INT FOREIGN KEY REFERENCES Users(UserID)
+);
