@@ -52,6 +52,12 @@ The backend architecture is structured around the following core relational modu
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 📋 Prerequisites
+Before running the application, make sure you have the following installed and configured:
+
+* **.NET Framework / .NET SDK** (matching your project version, e.g., .NET Framework 4.8 or .NET 6/8)
+* **Visual Studio** (2019 or newer recommended with the *.NET Desktop Development* workload installed)
+* **Microsoft SQL Server** (Express, Developer, or Enterprise edition)
+* **SQL Server Management Studio (SSMS)** (highly recommended for managing the database)
 * Your Backend Environment (e.g., Node.js / Python / PHP)
 * Database management framework (e.g., MySQL / PostgreSQL)
